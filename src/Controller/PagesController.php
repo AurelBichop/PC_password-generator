@@ -11,9 +11,6 @@ class PagesController extends AbstractController
     #[Route('/pages', name: 'pages')]
     public function index(): Response
     {
-        return $this->render('pages.html.twig',[
-            'message' => 'Welcome to your new controller!',
-            'path' => 'src/Controller/PagesController.php',
-        ]);
+        return $this->render('pages/pages.html.twig');
     }
 }
