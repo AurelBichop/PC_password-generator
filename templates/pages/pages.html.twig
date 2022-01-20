@@ -8,9 +8,13 @@
 
         <div>
             <label for="length">Length</label>
-            <select name="" id="length">
+            <select name="length" id="length">
                 {% for i in 8..60 %}
-                    <option value="{{i}}">{{i}}</option>
+                    <option value="{{i}}" 
+                    {{i == 12 ? 'selected' }}>
+
+                    {{i}}
+                    </option>
                 {% endfor %}
             </select>
         </div>
@@ -18,17 +22,17 @@
 
         <div>
             <label for="uppercase_letters">Upper case Letters</label>
-            <input type="checkbox" id="uppercase_letters">
+            <input type="checkbox" name="uppercase_letters" id="uppercase_letters">
         </div>
 
         <div>
             <label for="numbers">Numbers</label>
-            <input type="checkbox" id="numbers">
+            <input type="checkbox" name="numbers" id="numbers">
         </div>
 
         <div>
             <label for="special_characters">Special Characters</label>
-            <input type="checkbox" id="special_characters">
+            <input type="checkbox" name="special_characters" id="special_characters">
         </div>
     
         <div>
